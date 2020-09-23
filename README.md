@@ -33,8 +33,13 @@ $ git clone https://github.com/CaioAugustoo/git-finder
 # Entre no repositório
 $ cd gitoverview
 
-# Abra no navegador
-Como basta apenas de um index.html, basta iniciar com o LiveServer.
+Instale as dependencias digitando no termimal:
+$ yarn install
+
+Rode a aplicação no modo de desenvolvimento.
+$ yarn start
+
+Abra http://localhost:3000 no seu navegador para visualizar o projeto
 ```
 
 #### PS: PROJETO TOTALMENTE INSPIRADO EM: https://octoprofile.now.sh (https://github.com/bchiang7/octoprofile) 
