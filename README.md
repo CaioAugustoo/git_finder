@@ -9,7 +9,7 @@ Além disso, é gerado o @ do usuário, que ao ser clicado, redireciona o usuár
 
 ## Demonstração
 Confira abaixo um pouco sobre o projeto:
-https://gyazo.com/987a8551a0483b428faa5751296e87d9
+[![Image from Gyazo](https://i.gyazo.com/987a8551a0483b428faa5751296e87d9.png)](https://gyazo.com/987a8551a0483b428faa5751296e87d9)
 
 Você pode conferir o resultado final aqui: https://git-overview.netlify.app
 
