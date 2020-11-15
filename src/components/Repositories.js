@@ -123,12 +123,12 @@ const ReposData = ({ dataRepos }) => {
                 </ReposLanguages>
 
                 <RepoStars>
-                  <img src={Star} width="15" />
+                  <img src={Star} width="15" alt="Stars of repository" />
                   <p>{repo.stargazers_count}</p>
                 </RepoStars>
 
                 <RepoForks>
-                  <img src={Forks} width="15" />
+                  <img src={Forks} width="15" alt="Forks of repository" />
                   <p>{repo.forks_count}</p>
                 </RepoForks>
 
