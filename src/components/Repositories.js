@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Container } from "../style/GlobalStyle";
-import Star from '../img/svg/stars.svg';
-import Forks from '../img/svg/forks.svg';
+import Star from "../img/svg/stars.svg";
+import Forks from "../img/svg/forks.svg";
 
 const ReposSection = styled.div`
   display: flex;
@@ -25,9 +25,9 @@ const ReposBox = styled.div`
   top: -50px;
   transition: transform 0.3s ease;
 
-  @media  (min-width:18.75rem) and (max-width: 49.1875rem) {
-    width: 330px;   
-    min-height: 180px; 
+  @media (min-width: 18.75rem) and (max-width: 49.1875rem) {
+    width: 330px;
+    min-height: 180px;
   }
 
   &:hover {
@@ -74,7 +74,7 @@ const RepoSize = styled.div`
   opacity: 0.8;
 `;
 
- const RepoStars = styled.div`
+const RepoStars = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,11 +98,10 @@ const RepoForks = styled.div`
 `;
 
 const ReposData = ({ dataRepos }) => {
-  console.log(dataRepos)
   return (
     <Container>
       <ReposSection>
-        {dataRepos.map((repo) => (
+        {dataRepos.map(repo => (
           <a
             href={repo.html_url}
             key={repo.id}
@@ -124,19 +123,18 @@ const ReposData = ({ dataRepos }) => {
                 </ReposLanguages>
 
                 <RepoStars>
-                  <img src={Star} width="15"/>
-                  <p>{repo.stargazers_count}</p>                  
+                  <img src={Star} width="15" />
+                  <p>{repo.stargazers_count}</p>
                 </RepoStars>
 
                 <RepoForks>
-                  <img src={Forks} width="15"/>
-                  <p>{repo.forks_count}</p> 
+                  <img src={Forks} width="15" />
+                  <p>{repo.forks_count}</p>
                 </RepoForks>
 
                 <RepoSize>
                   <p>{repo.size + " KB"}</p>
                 </RepoSize>
-
               </RepoInfos>
             </ReposBox>
           </a>
