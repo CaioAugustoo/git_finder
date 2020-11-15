@@ -9,7 +9,7 @@ Além disso, é gerado o @ do usuário, que ao ser clicado, redireciona o usuár
 
 ## Demonstração
 Confira abaixo um pouco sobre o projeto:
-[![Image from Gyazo](https://i.gyazo.com/987a8551a0483b428faa5751296e87d9.png)](https://gyazo.com/987a8551a0483b428faa5751296e87d9)
+[![Image from Gyazo](https://i.gyazo.com/b2fcf6ecea7801f0839b32e8b5317cd5.png)](https://gyazo.com/b2fcf6ecea7801f0839b32e8b5317cd5)
 
 Você pode conferir o resultado final aqui: https://git-overview.netlify.app
 
@@ -28,10 +28,10 @@ Para que este rode em sua máquina, siga os passos abaixo:
 
 ```bash
 # Clone o repositório em alguma pasta em sua máquina
-$ git clone https://github.com/CaioAugustoo/git-finder
+$ git clone https://github.com/CaioAugustoo/git_finder
 
 # Entre no repositório
-$ cd gitoverview
+$ cd git_finder
 
 Instale as dependencias digitando no termimal:
 $ yarn install
