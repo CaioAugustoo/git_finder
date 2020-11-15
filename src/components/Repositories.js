@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Container } from "../style/GlobalStyle";
 import Star from "../img/svg/stars.svg";
@@ -98,10 +98,20 @@ const RepoForks = styled.div`
 `;
 
 const ReposData = ({ dataRepos }) => {
+  const [topRepositories, setTopRepositories] = useState(null);
+
+  useEffect(() => {
+    const getTopRepositories = dataRepos.sort((first, second) =>
+      first.stargazers_count < second.stargazers_count ? 1 : -1
+    );
+    setTopRepositories(getTopRepositories);
+  }, [dataRepos]);
+
+  if (topRepositories === null) return null;
   return (
     <Container>
       <ReposSection>
-        {dataRepos.map(repo => (
+        {topRepositories.map(repo => (
           <a
             href={repo.html_url}
             key={repo.id}
