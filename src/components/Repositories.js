@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Container } from "../style/GlobalStyle";
 import Star from "../img/svg/stars.svg";
 import Forks from "../img/svg/forks.svg";
@@ -8,6 +8,16 @@ const ReposSection = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+`;
+
+const item = keyframes`
+  from {
+    opacity: 0
+    transform: translateY(20px);
+  } to {
+    opacity: 1;
+    transform: translateY(0rem)
+  }
 `;
 
 const ReposBox = styled.div`
@@ -23,7 +33,10 @@ const ReposBox = styled.div`
   border-radius: 3px;
   position: relative;
   top: -50px;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  animation: ${item} 0.4s ease;
+  animation-fill-mode: both;
+  opacity: 0;
 
   @media (min-width: 18.75rem) and (max-width: 49.1875rem) {
     width: 330px;
@@ -111,14 +124,14 @@ const ReposData = ({ dataRepos }) => {
   return (
     <Container>
       <ReposSection>
-        {topRepositories.map(repo => (
+        {topRepositories.map((repo, index) => (
           <a
             href={repo.html_url}
             key={repo.id}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ReposBox>
+            <ReposBox style={{ animationDelay: `${index * 5}ms` }}>
               <ReposTitle>
                 <h3>{repo.name}</h3>
               </ReposTitle>
