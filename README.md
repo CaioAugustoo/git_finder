@@ -11,7 +11,7 @@ Além disso, é gerado o @ do usuário, que ao ser clicado, redireciona o usuár
 Confira abaixo um pouco sobre o projeto:
 [![Image from Gyazo](https://i.gyazo.com/b2fcf6ecea7801f0839b32e8b5317cd5.png)](https://gyazo.com/b2fcf6ecea7801f0839b32e8b5317cd5)
 
-Você pode conferir o resultado final aqui: https://git-finder-pi.vercel.app/
+Você pode conferir o resultado final aqui: https://gitfinder.caioaugusto.dev/
 
 ## Objetivo do projeto
 Foi realizado este projeto com o intuito de aplicar os conhecimentos adquiridos sobre requisições HTTPS utilizando API.
